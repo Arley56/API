@@ -10,6 +10,7 @@ class Videojuego(BaseModel):
     nombre: str
     genero: str
     precio: float
+    print("Videojuego API")
 
 videojuegos_db: List[Videojuego] = []
 
@@ -40,3 +41,5 @@ def aplicar_descuento(videojuego_id: int, descuento: float):
             v.precio *= (1 - descuento / 100)
             return {"mensaje": "Descuento aplicado", "nuevo_precio": v.precio}
     raise HTTPException(status_code=404, detail="Videojuego no encontrado")
+
+
