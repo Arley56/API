@@ -1,23 +1,13 @@
+# 🎮 API de Videojuegos
 
-# API de Videojuegos
+API REST construida con **FastAPI** para gestionar videojuegos.
 
-## Requisitos
-Instalar dependencias:
-```
+---
+
+## 📦 Requisitos
+
+Instalar dependencias del proyecto:
+
+```bash
 pip install -r requirements.txt
-```
 
-## Ejecutar el servidor
-```
-uvicorn main:app --reload
-```
-
-## Acceder a la documentación Swagger
-```
-http://localhost:8000/docs
-```
-
-## Ejecutar pruebas
-```
-pytest test_main.py
-```

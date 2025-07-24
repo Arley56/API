@@ -10,7 +10,6 @@ class Videojuego(BaseModel):
     nombre: str
     genero: str
     precio: float
-    print("Videojuego API")
 
 videojuegos_db: List[Videojuego] = []
 
